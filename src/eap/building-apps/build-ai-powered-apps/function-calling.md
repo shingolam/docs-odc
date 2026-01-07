@@ -91,7 +91,7 @@ Use the **Call Condition** for process control and the **Max Tokens** setting fo
 
 Here are some example expressions for the Call Condition:
 
-* To stop the process before it consumes 3000 tokens: `TokenUsage < 8000`  
-* To limit the agent to a maximum of fifty reasoning loops: `LoopCount < 50`  
-* To stop the agent after it has made a total of thirty action calls (regardless of the number of loops): `TotalCallsCount < 25`  
-* To apply multiple conditions simultaneously: `TokenUsage < 8000 and TotalCallsCount < 25`
+* To stop the process before it consumes 8000 tokens: `TokenUsage >= 8000`  
+* To limit the agent to a maximum of fifty reasoning loops: `LoopCount >= 50`  
+* To stop the agent after it has made a total of thirty action calls (regardless of the number of loops): `TotalCallsCount >= 25`  
+* To apply multiple conditions simultaneously: `TokenUsage >= 8000 or TotalCallsCount >= 25`
